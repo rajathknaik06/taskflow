@@ -1,0 +1,2 @@
+Set-Content .gitignore ".venv/", "__pycache__/", "*.pyc",
+".pytest_cache/"

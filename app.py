@@ -8,7 +8,7 @@ next_id = 1
 
 @app.get("/health")
 def health():
-    return jsonify(status="ok"), 200
+    return jsonify(status="ok", version="1.1"), 200
 
 
 @app.post("/tasks")
@@ -36,5 +36,3 @@ def complete_task(task_id):
         return jsonify(error="not found"), 404
     task["done"] = True
     return jsonify(task), 200
-
-# testing cache

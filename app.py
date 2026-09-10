@@ -36,3 +36,4 @@ def complete_task(task_id):
         return jsonify(error="not found"), 404
     task["done"] = True
     return jsonify(task), 200
+
